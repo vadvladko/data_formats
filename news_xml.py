@@ -11,7 +11,7 @@ news_all = []
 for length in news_all_list:
     if len(length) > 6:
         news_all.append(length)
-print(news_all)
+# print(news_all)
 afr_dict = {}
 for w in news_all:
     if w in afr_dict:
