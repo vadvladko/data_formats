@@ -8,8 +8,9 @@ with open('newsafr.json', encoding = 'utf-8') as newsafr_json:
   for news in j_newsafr['rss']['channel']['items']:
     afr = news['description']
     # print(afr)
-    # afr_2 = afr.lower()
-    afr_list = afr.split()
+    afr_2 = afr.lower()
+    afr_list = afr_2.split()
+    # print(afr_list)
     for length in afr_list:
       if len(length) > 6:
           news_all_list.append(length)
